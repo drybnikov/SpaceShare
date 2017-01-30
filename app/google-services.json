@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "567826627765",
+    "firebase_url": "https://garageshare-742fe.firebaseio.com",
+    "project_id": "garageshare-742fe",
+    "storage_bucket": "garageshare-742fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567826627765:android:c20d888d8066e546",
+        "android_client_info": {
+          "package_name": "com.denisr.garageshare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "567826627765-0asngfehqi41ka7sdqca83puue4e4ro3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.denisr.garageshare",
+            "certificate_hash": "AD8A4D5A8226E5C812F2EAFCE0A511F5239E3BB8"
+          }
+        },
+        {
+          "client_id": "567826627765-i29qe5f8hkssqoou4thujt3bu4tpi809.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDX2Dm93juFom49k_lSrJO-lOaOQL-fuRc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "567826627765-i29qe5f8hkssqoou4thujt3bu4tpi809.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

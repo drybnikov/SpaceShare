@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="user_space_image_width">119dp</dimen>
+    <dimen name="overlap_top">64dp</dimen>
+    <dimen name="title_margin_bottom">80dp</dimen>
+</resources>

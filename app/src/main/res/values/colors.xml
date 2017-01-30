@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="palette_day_white">#fff</color>
+    <color name="palette_day_red_700">#d32f2f</color>
+    <color name="palette_day_red_20pct">#88d32f2f</color>
+    <color name="palette_day_yellow_700">#FBC02D</color>
+    <color name="palette_day_green_700">#388E3C</color>
+
+    <color name="palette_day_indigo_100">#C5CAC9</color>
+
+    <color name="colorPrimary">#039BE5</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#91C3DB</color>
+    <color name="colorPrimary50">#88039BE5</color>
+
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="indigo_500">#3F51B5</color>
+
+
+    <color name="grey_700">#616161</color>
+    <color name="grey_50">#44000000</color>
+
+    <color name="colorFree">#888BC34A</color>
+    <color name="colorBooked">#B3E5FC</color>
+    <color name="colorUsed">#88e57373</color>
+    <color name="colorMySpace">#88FFEB3B</color>
+    <color name="colorDisabled">#88A5D6A7</color>
+</resources>

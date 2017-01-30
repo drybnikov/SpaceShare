@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:tools="http://schemas.android.com/tools"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:clickable="true"
+                                    android:foreground="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/post_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_space_image_width"
+        android:src="@drawable/influxdb_icon_1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_50"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/post_author_layout"
+                layout="@layout/include_post_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:id="@+id/user_status_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/ic_access_denied"
+                android:visibility="visible"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/content_small_horizontal_margin"
+            android:layout_marginRight="@dimen/content_small_horizontal_margin"
+            android:layout_marginBottom="@dimen/content_small_horizontal_margin"
+            android:layout_marginTop="@dimen/user_space_image_width">
+
+            <ImageView
+                android:id="@+id/expanded_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="?attr/selectableItemBackground"
+                android:paddingBottom="4dp"
+                android:paddingLeft="8dp"
+                android:src="@drawable/ic_more_vert_black_24"/>
+
+            <include
+                android:id="@+id/post_text_layout"
+                layout="@layout/include_post_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <LinearLayout
+                android:id="@+id/star_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/post_text_layout"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/post_used_items_count"
+                    style="@style/TextAppearance.AppCompat.Notification.Info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="?colorPrimary"
+                    tools:text="3"/>
+
+                <ProgressBar
+                    android:id="@+id/post_items_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="@dimen/user_space_image_width"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:progress="45"/>
+
+                <TextView
+                    android:id="@+id/post_items_count"
+                    style="@style/TextAppearance.AppCompat.Notification.Info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    tools:text="(75)"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

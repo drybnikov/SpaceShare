@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/post_image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/big_image_height"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+            <ImageView
+                android:id="@+id/post_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/grs_share_icon"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimary50">
+
+                <include
+                    android:id="@+id/post_author_layout"
+                    layout="@layout/include_post_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+            </FrameLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/field_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/post_image_layout">
+
+            <EditText
+                android:id="@+id/field_title"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="16dp"
+                android:hint="@string/post_hint_title"
+                android:inputType="textAutoComplete"
+                android:maxLines="1"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/field_body_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/field_title_layout">
+
+            <EditText
+                android:id="@+id/field_body"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="5dp"
+                android:hint="@string/post_hint_description"
+                android:lines="2"
+                android:maxLines="4"
+                android:scrollHorizontally="false"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/field_location_hint"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/field_body_layout"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/description_left_margin"
+            android:layout_marginRight="@dimen/description_left_margin"
+            android:layout_marginTop="@dimen/description_left_margin"
+            android:text="@string/post_location_title"
+            android:textColor="?attr/colorAccent"/>
+
+        <TextView
+            android:clickable="true"
+            android:id="@+id/field_location"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/field_location_hint"
+            android:layout_marginLeft="@dimen/description_left_margin"
+            android:text="@string/post_location_hint"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_edit_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_navigation_check_24"/>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
