@@ -11,4 +11,4 @@ env:
 
 # Run assemble, unit tests, and create coverage report
 script:
-  - ./gradlew clean assembleDebug assembleRelease
+ - chmod +x ./gradlew clean assembleDebug assembleRelease
