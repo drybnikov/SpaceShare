@@ -2,11 +2,11 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 28
-    buildToolsVersion "27.0.3"
+    buildToolsVersion "28.0.3"
     defaultConfig {
         applicationId "com.denisr.garageshare"
-        minSdkVersion 15
-        targetSdkVersion 23
+        minSdkVersion 16
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -20,32 +20,32 @@ android {
 }
 
 configurations.all {
-    resolutionStrategy.force 'com.android.support:support-annotations:25.0.1'
+    resolutionStrategy.force 'com.android.support:support-annotations:28.0.0'
 }
-ext.supportLibraryVersion = '25.0.1'
+ext.supportLibraryVersion = '28.0.0'
 
 dependencies {
-    testCompile 'junit:junit:4.12'
-    compile "com.android.support:appcompat-v7:$supportLibraryVersion"
-    compile "com.android.support:recyclerview-v7:$supportLibraryVersion"
-    compile "com.android.support:cardview-v7:$supportLibraryVersion"
-    compile "com.android.support:design:$supportLibraryVersion"
+    androidTestImplementation 'junit:junit:4.12'
+    implementation "com.android.support:support-v4:$supportLibraryVersion"
+    implementation "com.android.support:recyclerview-v7:$supportLibraryVersion"
+    implementation "com.android.support:cardview-v7:$supportLibraryVersion"
+    implementation "com.android.support:design:$supportLibraryVersion"
 
-    compile 'com.firebaseui:firebase-ui-database:1.0.0'
-    compile 'com.google.firebase:firebase-auth:10.0.1'
-    compile 'com.google.firebase:firebase-database:10.0.1'
-    compile 'com.google.firebase:firebase-storage:10.0.1'//9.2.1
+    implementation 'com.firebaseui:firebase-ui-database:1.0.0'
+    implementation 'com.google.firebase:firebase-auth:10.0.1'
+    implementation 'com.google.firebase:firebase-database:10.0.1'
+    implementation 'com.google.firebase:firebase-storage:10.0.1'//9.2.1
 
-    compile 'com.google.android.gms:play-services-location:10.0.1'
-    compile 'com.google.android.gms:play-services-maps:10.0.1'
-    compile 'com.google.android.gms:play-services-places:10.0.1'
+    implementation 'com.google.android.gms:play-services-location:10.0.1'
+    implementation 'com.google.android.gms:play-services-maps:10.0.1'
+    implementation 'com.google.android.gms:play-services-places:10.0.1'
 
-    compile 'com.github.bumptech.glide:glide:3.7.0'
-    compile 'com.theartofdev.edmodo:android-image-cropper:2.3.+'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.3.+'
 
 
-    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
-    androidTestCompile 'com.android.support.test:runner:0.5'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.2'
+    androidTestImplementation 'com.android.support.test:runner:0.5'
 
 }
 
