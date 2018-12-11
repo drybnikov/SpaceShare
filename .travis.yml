@@ -10,5 +10,7 @@ env:
     - ADB_INSTALL_TIMEOUT=8
 
 # Run assemble, unit tests, and create coverage report
+before_install:
+  - chmod +x gradlew
 script:
- - chmod +x ./gradlew clean assembleDebug assembleRelease
+  - ./gradlew clean assembleDebug assembleRelease
